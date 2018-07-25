@@ -1,0 +1,29 @@
+.signIn-form {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(175, 235, 214);
+    border: rgb(97, 96, 96);
+    border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border-radius: 2%;
+
+
+}
+
+.form-group {
+    padding: 25px;
+}
+
+.signin-heading {
+text-align: center;
+font-style: oblique;
+font-weight: bolder;
+padding: 10px;
+color: rgb(40, 83, 40); 
+}
+
+.form-control {
+    border: green;
+}
