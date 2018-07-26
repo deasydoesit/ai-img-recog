@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./SignUp.css";
-// import Header from "../components/Header";
-// import Footer from "../components/Footer";
-// import SubmitBtn from "./components/SubmitBtn";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import SubmitBtn from "../../components/SubmitBtn";
 import Input from "../../components/Input";
+import Container from "../../components/Container";
 
 
 
@@ -28,9 +29,8 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div>
-
-                {/* <Header /> */}
+            <Container fluid>
+                <Header />
                 <form className="signUp-form">
                     <h3 className="signup-heading"> Create a Profile </h3>
                     <Input
@@ -45,10 +45,10 @@ class SignUp extends Component {
                         onChange={event => this.onChange(event)}
                         value={this.state.password} />
                     <br />
-                    {/* <SubmitBtn /> */}
+                    <SubmitBtn onClick={this.onSubmit} />
                 </form>
-                {/* <Footer /> */}
-            </div>
+                <Footer />
+            </Container>
         );
     }
 
