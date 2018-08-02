@@ -3,7 +3,6 @@ import { Redirect } from "react-router";
 import { setInStorage } from '../../utils/storage';
 import Input from "../../components/Input";
 import API from "../../utils/API";
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Container from "../../components/Container";
 import "./SignIn.css";
@@ -84,6 +83,7 @@ class SignIn extends Component {
     } = this.state;
       return (
         <div>
+          <Container>
             <form className="signIn-form">
                 <h3 className="signin-heading"> Hello </h3>
                 <Input
@@ -107,7 +107,7 @@ class SignIn extends Component {
               <Redirect to={'/profile'} />
             )}
             <Footer />
-          </div>
+
         </Container>
       </div>
     );

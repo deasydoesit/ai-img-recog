@@ -140,10 +140,13 @@ class Profile extends Component {
       API.postImage(token, formData)
         .then(function (res) {
           console.log(res.data);
+          window.location.reload()
         });
       this.resetForm();
     }
   }
+
+
 
   // Function to display file provided by user in image cropper
   onSelectFile = event => {
@@ -223,20 +226,20 @@ class Profile extends Component {
           <List>
             {this.state.trees.map(tree => (
               <ListItem key={tree._id}>
-                  <div class="row">
-                    <div class="col-md-3">
+                  <div className="row">
+                    <div className="col-md-3">
                       <i>
                         <strong>{tree.name}</strong>
                         <p>{tree.sciName}</p>
                       </i>
                     </div>
-                    <div class="col-md-3">
+                    <div className="col-md-3">
                       <img src={tree.path} />
                     </div>
-                    <div class="col-md-3">
+                    <div className="col-md-3">
                       <img src={tree.range} />
                     </div>
-                    <div class="col-md-1"></div>
+                    <div className="col-md-1"></div>
                   </div>
 
 

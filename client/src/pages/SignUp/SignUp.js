@@ -55,7 +55,7 @@ class SignUp extends Component {
       signUpPass,
       fireRedirect
     } = this.state;
-    const { from } = this.props.location.state || '/'
+  
 
     return (
       <Container fluid>
