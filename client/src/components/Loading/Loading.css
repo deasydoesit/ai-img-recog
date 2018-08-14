@@ -1,0 +1,6 @@
+#loader-wrapper {
+    height: 1000px;
+    z-index: 999;
+    background-color: black;
+    display: none;
+}

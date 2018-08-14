@@ -1,0 +1,38 @@
+.photo {
+    width: 350px;
+    height: 425px;
+    background-image: url("../../images/leaf-polaroid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 14%;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 24px;
+    /* border: solid 3px darkgray; */
+    display: inline-block;
+}
+
+#upload {
+    margin-top: 90px;
+    margin-left: 23px;
+    font-size: 32px;    
+    position: relative;
+    bottom: 55px;
+    font-family: 'Cabin Sketch', cursive;
+    color: white;
+}
+
+.form-group input {
+    font-size: 28px;
+    padding-top: 15px; 
+}
+
+#FormControl {
+    color: red;
+    position: relative;
+    top: 185px;
+    font-size: 24px;
+    
+}
+

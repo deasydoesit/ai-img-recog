@@ -1,29 +1,57 @@
 .signIn-form {
-    width: 500px;
+    width: 700px;
     height: 400px;
-    background-color: rgb(175, 235, 214);
-    border: rgb(97, 96, 96);
+    background-color: whitesmoke;
+    /* background-image: url("../../images/notebook.png"); */
+    border: rgb(34, 82, 30);
     border-style: solid;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  border-radius: 2%;
-
-
+  margin-bottom: 60px;
+  opacity: 0.8;
 }
 
 .form-group {
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom:0px;
+    border: rgb(7, 36, 7);
+    margin-bottom:10px;
+
+}
+.form-control {
+    border-color: rgb(7, 104, 7);
+}
+.form-control:focus {
+    color: #272b2e;
+    background-color: rgb(238, 237, 237);
+    border-color: rgb(7, 104, 7);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(3, 110, 17, 0.25);
 }
 
 .signin-heading {
-text-align: center;
-font-style: oblique;
-font-weight: bolder;
-padding: 10px;
-color: rgb(40, 83, 40); 
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    /* font-style: oblique;
+    font-weight: bold; */
+    padding: 10px;
 }
 
-.form-control {
-    border: green;
+#signin {
+    margin-left: 38%;
+    background-color: rgb(54, 131, 54);
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.signInPage {
+    background-image: url("../../images//leaves-background.jpeg");
+    background-color: rgb(238, 237, 237);
+    background-size: cover;
+    width: 100%;
 }

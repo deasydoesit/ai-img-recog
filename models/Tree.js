@@ -3,7 +3,15 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const TreeSchema = new Schema({
-  path: {
+  name: {
+    type: String,
+    required: true
+  },
+  sciName: {
+      type: String,
+      required: true
+  },
+  range: {
     type: String,
     required: true
   }
@@ -12,18 +20,3 @@ const TreeSchema = new Schema({
 const Tree = mongoose.model("Tree", TreeSchema);
 
 module.exports = Tree;
-
-// const TreeSchema = new Schema({
-//     path: {
-//       type: String,
-//       required: true
-//     },
-//     password: {
-//       type: String,
-//       required: true
-//     },
-//     user: {
-//       type: Schema.Types.ObjectId,
-//       ref: "User"
-//     }
-// });

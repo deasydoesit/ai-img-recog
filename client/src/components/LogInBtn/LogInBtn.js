@@ -4,8 +4,12 @@ import "./LogInBtn.css";
 
 const LogInBtn = props => (
 
-    <Link to="/signin"><button type="button" className="btn btn-success">
-        Log In
+    <Link to="/signin">
+      <button
+        className="submit-button btn btn-success"
+        type="button"
+        id="siButton">
+        Sign In
     </button></Link>
 );
 

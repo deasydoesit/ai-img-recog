@@ -1,55 +1,91 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router";
 import "./SignUp.css";
-// import Header from "../components/Header";
-// import Footer from "../components/Footer";
-// import SubmitBtn from "./components/SubmitBtn";
 import Input from "../../components/Input";
+import API from "../../utils/API";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 
 class SignUp extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: '',
-            password: ''
-        }
-    }
-    onChange = event => {
-        this.setState({
-            [event.target.name]: event.target.value,
-        });
+  constructor(props) {
+    super(props);
+    this.state = {
+      token: '',
+      signUpUser: '',
+      signUpPass: '',
+      fireRedirect: false
     }
 
-    onSubmit = event => {
-        event.preventDefault();
+    this.HandleInputChangeSignUpUser = this.HandleInputChangeSignUpUser.bind(this);
+    this.HandleInputChangeSignUpPass = this.HandleInputChangeSignUpPass.bind(this);
+    this.onSignUp = this.onSignUp.bind(this);
+  }
+
+  HandleInputChangeSignUpUser(event) {
+    this.setState({
+      signUpUser: event.target.value
+    });
+  }
+
+  HandleInputChangeSignUpPass(event) {
+    this.setState({
+      signUpPass: event.target.value
+    });
+  }
+
+  onSignUp(e) {
+    e.preventDefault()
+    this.setState({ fireRedirect: true });
+    const {
+      signUpUser,
+      signUpPass
+    } = this.state
+    console.log(signUpUser + signUpPass);
+    let suObj = {
+      username: signUpUser,
+      password: signUpPass
     }
+    API.signUp(suObj);
+  }
 
-    render() {
-        return (
-            <div>
+  render() {
+    const {
+      signUpUser,
+      signUpPass,
+      fireRedirect
+    } = this.state;
+    
 
-                {/* <Header /> */}
-                <form className="signUp-form">
-                    <h3 className="signup-heading"> Create a Profile </h3>
-                    <Input
-                        name='email'
-                        placeholder='Email'
-                        onChange={event => this.onChange(event)}
-                        value={this.state.email} />
-                    <Input
-                        name='password'
-                        placeholder='Password'
-                        type='password'
-                        onChange={event => this.onChange(event)}
-                        value={this.state.password} />
-                    <br />
-                    {/* <SubmitBtn /> */}
-                </form>
-                {/* <Footer /> */}
-            </div>
-        );
-    }
-
+    return (
+      // <Container fluid>
+      <div className="signUpPage">
+          <Header />
+          <form className="signUp-form">
+            <h1 className="signup-heading"> Create a Profile </h1>
+            <Input
+              type="text"
+              placeholder="Username"
+              value={signUpUser}
+              onChange={this.HandleInputChangeSignUpUser} />
+            <Input
+              type="password"
+              placeholder="Password"
+              value={signUpPass}
+              onChange={this.HandleInputChangeSignUpPass} />
+            <br />
+            <button type="button" className="btn btn-sucess" id="signup" onClick={this.onSignUp}>Sign Up</button>
+          </form>
+          {fireRedirect && (
+            <Redirect to={'/signin'} />
+          )}
+          <Footer />
+        </div>
+      // </Container>
+    );
+  }
 }
 
-export default SignUp;
 
+
+export default SignUp;

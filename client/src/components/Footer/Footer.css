@@ -1,11 +1,14 @@
 .footer {
     background-color: #0c7c30;
-    height: 75px;
+    height: 80px;
     text-align: center;
     border-top: solid 3px darkgray;
+    margin-top: 7%;
 }
 
 .copyright {
-    padding-top: 35px;
+    padding-top: 25px;
     color: white;
+    font-size: 16px;
+    font-family: 'Love Ya Like A Sister', cursive;
 }

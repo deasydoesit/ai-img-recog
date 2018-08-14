@@ -4,11 +4,12 @@ import "./LogOutBtn.css";
 
 const LogOutBtn = props => (
 
-    <Link to="/">
-        <button id="logout" type="button" className="btn btn-success">
+    <div>
+        <button id="logout" type="button" className="btn btn-success"
+        onClick={this.logout}>
             Log Out
         </button>
-    </Link>
+    </div>
 );
 
 export default LogOutBtn;

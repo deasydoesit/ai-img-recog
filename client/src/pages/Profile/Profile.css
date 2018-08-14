@@ -1,0 +1,85 @@
+/* img
+{
+  width: 180px;
+  margin: 10px;
+}
+
+div.list-overflow-container {
+    width:80%;
+    margin:auto;
+    border:green solid;
+}
+
+.list-group-item {
+    text-align: center;
+
+}
+
+/* #logout {
+    margin:50%;
+    background-color: rgb(54, 131, 54);
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Fredericka the Great', cursive;
+} */
+
+img {
+  height: 200px;
+  z-index: 999;
+}
+
+.cropper {
+    margin-top: 3%;
+}
+
+.savedLeafs {
+    border: solid 3px black;
+    box-shadow: 5px 10px gray;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #f0e0be;
+    border-radius: 8px;
+}
+
+/* .list-group-item {} */
+
+.profilePage {
+    background-color: #b5f0c0;
+}
+
+.garland {
+    height: 100px;
+    position: absolute;
+    /* top: -20px; */
+    left: -70px;
+}
+
+.directions {
+    margin-top: 125px;
+    width: 80%;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 24px;
+    line-height: 2;
+}
+
+#logout {
+    margin:45%;
+    background-color: rgb(54, 131, 54);
+    color:white;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    padding: 10px;
+}
+
+.collectionTitle {
+    background-color: rgba(73, 71, 71, 0.5);
+    font-size: 36px;
+    text-align: center;
+    width: 75%;
+    margin-left: 12%;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+

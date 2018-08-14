@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Eastern Redbud",
+        "sciName": "Cercis canadensis",
+        "range": "https://s3.amazonaws.com/leafy-me/public/eastern_redbud_range.png"
+    },
+    {
+        "name": "Ginkgo",
+        "sciName": "Ginkgo",
+        "range": "https://s3.amazonaws.com/leafy-me/public/ginkgo_range.png"
+    },
+    {
+        "name": "Southern Magnolia",
+        "sciName": "Magnolia grandiflora",
+        "range": "https://s3.amazonaws.com/leafy-me/public/southern_magnolia_range.png"
+    }
+]

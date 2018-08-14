@@ -1,4 +1,6 @@
 module.exports = {
     User: require("./User"),
-    Tree: require("./Tree")
+    Post: require("./Post"),
+    Tree: require("./Tree"),
+    UserSession: require("./UserSession")
 };
