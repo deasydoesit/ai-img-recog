@@ -9,7 +9,6 @@
     margin-left: 14%;
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 24px;
-    /* border: solid 3px darkgray; */
     display: inline-block;
 }
 
@@ -33,6 +32,28 @@
     position: relative;
     top: 185px;
     font-size: 24px;
-    
 }
 
+.cropper-container {
+    position: absolute;
+    top: -350px;
+    left: -450px;
+    z-index: 999;
+    margin-left: -50px;
+    border: solid 5px darkgreen;
+    background: black;
+
+}
+
+#cropButton {
+    position: relative;
+    top: -150px;
+    z-index: 1000;
+}
+
+#uploadButton {
+    position: absolute;
+    left: 350px;
+    top: 15px;
+    z-index: 1000;
+}

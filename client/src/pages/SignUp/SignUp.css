@@ -4,11 +4,11 @@
     background-color:whitesmoke;
     border: rgb(34, 82, 30);
     border-style: solid;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 60px;
-  opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    opacity: 0.8;
 }
 
 .form-group {
