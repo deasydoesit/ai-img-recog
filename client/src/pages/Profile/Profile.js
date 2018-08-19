@@ -239,7 +239,7 @@ class Profile extends Component {
 
             <div style={{ display: this.state.displayImageCropper }}>
               <Cropper
-                style={{ height: "450px", width: "150%" }}
+                style={{ height: "450px", width: "150%"}}
                 aspectRatio={1 / 1}
                 guides={false}
                 src={this.state.src}
@@ -251,7 +251,7 @@ class Profile extends Component {
             </div>
           </div>
               
-          <img style={{ height: 600, position: "absolute", top: "80px", left: "300px", display: this.state.displayCroppedImage }} src={this.state.cropResult} alt="cropped" id="cropped" />
+          <img style={{ height: 440, position: "absolute", top: "175px", left: "90px", display: this.state.displayCroppedImage }} src={this.state.cropResult} alt="cropped" id="cropped" />
         </div>
 
         <div id="loader">

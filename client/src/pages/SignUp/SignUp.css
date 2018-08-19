@@ -8,7 +8,7 @@
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 60px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .form-group {
@@ -34,8 +34,6 @@
 .signup-heading {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    /* font-style: oblique;
-    font-weight: bold; */
     padding: 10px;
 }
 
@@ -48,14 +46,8 @@
     font-family: 'Fredericka the Great', cursive;
 }
 
-.background-image {
-    background-image: url('../../images/leaves-background.jpeg');
-    background-size: cover;
-    height:100%;
-}
-
 .signUpPage {
-    background-image: url("../../images//leaves-background.jpeg");
+    background-image: url("../../images/leaves.png");
     background-color: rgb(238, 237, 237);
     background-size: cover;
     width: 100%;

@@ -58,7 +58,6 @@ class SignUp extends Component {
     
 
     return (
-      // <Container fluid>
       <div className="signUpPage">
           <Header />
           <form className="signUp-form">
@@ -81,7 +80,6 @@ class SignUp extends Component {
           )}
           <Footer />
         </div>
-      // </Container>
     );
   }
 }

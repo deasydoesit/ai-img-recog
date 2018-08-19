@@ -80,7 +80,7 @@ module.exports = function (app) {
       // Set up Watson parameters
 
       let image_url =  req.file.location;
-      const classifier_ids = ["trees_447821576"];
+      const classifier_ids = ["DefaultCustomModel_1832883370"];
       const threshold = 0.6;
 
       let params = {
