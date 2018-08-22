@@ -53,6 +53,7 @@ img {
     margin-left: 12%;
     color: white;
     font-family: 'Cabin Sketch', cursive;
+    font-size: 42px;
 }
 
 #cropped {
@@ -68,7 +69,7 @@ img {
     padding: 10px;
     position: fixed;
     top: 35%;
-    left: 35%;
+    left: 40%;
     z-index: 1000;
     margin-right: -25%;
     margin-bottom: -25%;

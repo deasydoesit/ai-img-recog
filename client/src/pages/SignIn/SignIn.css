@@ -34,16 +34,15 @@
 .signin-heading {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    /* font-style: oblique;
-    font-weight: bold; */
-    padding: 10px;
+    font-size: 42px;
+    padding: 35px 10px 10px 10px;
 }
 
 #signin {
     margin-left: 38%;
     background-color: rgb(54, 131, 54);
     color:white;
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 15px;
     font-family: 'Fredericka the Great', cursive;
 }

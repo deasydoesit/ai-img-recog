@@ -34,14 +34,14 @@
 .signup-heading {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    padding: 10px;
+    padding: 35px 10px 10px 10px;
 }
 
 #signup {
     margin-left: 38%;
     background-color: rgb(54, 131, 54);
     color:white;
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 15px;
     font-family: 'Fredericka the Great', cursive;
 }
@@ -52,5 +52,3 @@
     background-size: cover;
     width: 100%;
 }
-
-/* http://www.sdjgjx.com/up/pc/Leaf%20Background%2027349.jpg */
